@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-Lac +Sabor</title>
+    <link rel="stylesheet" href="style.css"> <!--Para importar as configurações de estilo-->
+</head>
+<body>
+    <form> <!--Criação de um formulário-->
+        <div class="caixa"> <!--1º div para que tudo nela esteja em uma mesma caixa-->
+            <h2>Bem-vindo(a) ao -Lac +Sabor!</h2>
+            <h3>Faça o seu longin:</h3>
+            <div class="inputs"> <!--Input para a informação do usuário entrar-->
+                <input type="text" name="email" id="emial" placeholder="Email">
+            </div>
+            <div class="inputs">
+                <input type="text" name="senha" id="senha" placeholder="Senha">
+            </div>
+            <div class="line">
+                <div class="checkbox"> <!--Chackbox clicável-->
+                    <label><input type="checkbox" name="remember" id="remember"> Lembre-me</label>
+                </div> <!--Label serve para poder clicar também no texto e marcar o chackbox-->
+                <!--Link interno-->
+                <a href= # onclick="alert('Instruções serão enviadas ao email informado.')">Esqueci a senha</a> <!--Usando # no 'href' para que nenhuma página html seja procurada-->
+            </div>
+            <button class="button" type="button"> 
+                Entrar
+            </button> <!--Um botão clicável-->
+            <div class="link"> <!--Link interno-->
+                <a href= #>Não possui uma conta ainda? Registre-se aqui!</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+<!--Ainda falta: mudar o tamaho do checkbox, o tamanho da escrita no inputs, ajustar espaçamentos (juntar mais os inputs com o h3 para subir o botão)-->

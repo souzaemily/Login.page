@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body{
+    background-image: url('./morangos.new.jpg');
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.caixa{
+    border: 5px solid #d76067;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #981d26;
+    margin: 150px auto;
+    width: 600px;
+    height: 400px;
+}
+.inputs{
+    position: relative;
+    margin: 30px;
+    padding: 2px 5px 2px;
+    text-align: center;
+}
+form .inputs input, input[type="submit"] {
+    width: 90%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+form .inputs input:hover, input[type="submit"] {
+    border: 2px solid #f59b9e;
+}
+h2 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+h3{
+    color: white;
+    text-align: center;
+}
+form .checkbox{
+    color:white;
+    margin-left: 70px; 
+}
+a{
+    color: white;
+} 
+form .line .checkbox{
+    display: inline-block;
+    margin-inline-end: 180px;
+}
+.button{
+    background-color: #500e10;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: #977073 3px solid;
+    border-radius: 20px;
+    margin-left: 41%;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.link{
+    text-align: center;
+    margin-top: 10px;
+}
