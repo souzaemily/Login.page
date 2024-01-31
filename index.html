@@ -12,7 +12,7 @@
             <h2>Bem-vindo(a) ao -Lac +Sabor!</h2>
             <h3>Faça o seu longin:</h3>
             <div class="inputs"> <!--Input para a informação do usuário entrar-->
-                <input type="text" name="email" id="emial" placeholder="Email">
+                <input type="text" name="email" id="email" placeholder="Email">
             </div>
             <div class="inputs">
                 <input type="text" name="senha" id="senha" placeholder="Senha">
@@ -24,14 +24,42 @@
                 <!--Link interno-->
                 <a href= # onclick="alert('Instruções serão enviadas ao email informado.')">Esqueci a senha</a> <!--Usando # no 'href' para que nenhuma página html seja procurada-->
             </div>
-            <button class="button" type="button"> 
-                Entrar
-            </button> <!--Um botão clicável-->
+            <button class="button" type="button" onclick="login()">Login</button> <!--Um botão clicável-->
             <div class="link"> <!--Link interno-->
                 <a href= #>Não possui uma conta ainda? Registre-se aqui!</a>
             </div>
         </div>
     </form>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script> <!-- Biblioteca para o consumo da api -->
+    <script>
+        function login(){
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            if(!email || !senha){
+                alert("Informação de login incompleta!");
+            }else{
+                const user = {
+                    email: email,
+                    senha: senha
+                }
+
+                axios.post("http://localhost:3030/login",user).then(res => {
+                    if(res.status == 200){
+                        alert("Login realizado!");
+                        // Redirecionar o usuário para uma nova página
+                        window.location.href = "https://recodebootstrep.netlify.app";
+                    }else{
+                        alert("Informações não encontradas")
+                    }
+                }).catch(err => {
+                    alert("Informações incorretas!")
+                })
+            }
+        }
+    </script>
 </body>
 </html>
 

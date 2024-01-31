@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-image: url('./morangos.new.jpg');
+    background-image: url('./img/morangos.new.jpg');
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -58,6 +58,7 @@ form .line .checkbox{
     border: #977073 3px solid;
     border-radius: 20px;
     margin-left: 41%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .button:hover{
     background-color: white;
